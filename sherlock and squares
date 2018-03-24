@@ -5,9 +5,9 @@
 #include <algorithm>
 using namespace std;
  
-int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int t, a, b, count;
+int main()
+{
+       int t, a, b, count;
     cin >> t;
     while(t--) {
         cin >> a >> b;
