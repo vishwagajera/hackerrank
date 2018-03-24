@@ -1,0 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+ 
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int t, a, b, count;
+    cin >> t;
+    while(t--) {
+        cin >> a >> b;
+        int res = ceil(sqrt(a));
+        count = 0;
+        while(res*res <= b) {
+            count++;
+            res++;
+        }
+        cout << count << endl;
+    }
+    return 0;
+}
